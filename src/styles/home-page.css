@@ -130,12 +130,8 @@ input::selection {
 }
 
 @media (min-width: 576px) {
-  .footer-fs {
-    font-size: 15px;
-  }
-
   .main-fs {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .description-fs {
@@ -157,6 +153,10 @@ input::selection {
   }
 
   .card-text {
+    font-size: 15px;
+  }
+
+  .footer-fs {
     font-size: 15px;
   }
 }
@@ -191,6 +191,24 @@ input::selection {
 @media (min-width: 1200px) {
   .description-fs {
     font-size: 25px;
+  }
+
+  .style-card {
+    width: 340px;
+    height: 400px;
+  }
+
+  .card-position-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .title-card {
+    font-size: 25px;
+  }
+
+  .card-text {
+    font-size: 20px;
   }
 }
 
