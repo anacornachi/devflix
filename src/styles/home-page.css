@@ -217,7 +217,7 @@ input::selection {
   }
 
   .style-card {
-    width: 340px;
+    width: 310px;
     height: 400px;
   }
 
@@ -231,7 +231,7 @@ input::selection {
   }
 
   .card-text {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
