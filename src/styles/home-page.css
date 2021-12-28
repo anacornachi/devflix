@@ -68,7 +68,7 @@ main {
 }
 
 .btn-fs {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .fs-12 {
@@ -130,6 +130,26 @@ input::placeholder {
 
 input::selection {
   background-color: var(--orange);
+}
+
+@media (max-width: 320px) {
+  .img-main {
+    width: auto;
+    height: 400px;
+  }
+
+  #content-main {
+    position: absolute;
+    margin-top: 250px;
+    padding-right: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .img-main {
+    width: auto;
+    height: 450px;
+  }
 }
 
 @media (min-width: 576px) {
