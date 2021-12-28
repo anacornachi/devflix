@@ -1,0 +1,132 @@
+body {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+:root {
+  --darker-blue: #011126;
+  --main-blue: #011c40;
+  --lighter-blue: #2f66a1;
+  --orange: #f29a2e;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--darker-blue);
+  border-radius: 15px;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+  border-radius: 15px;
+}
+
+header {
+  background-color: var(--darker-blue);
+}
+
+.logo {
+  /* font-family: "Rubik Mono One", sans-serif; */
+  color: var(--orange);
+  font-size: 28px;
+  margin: 0;
+}
+
+main {
+  background-color: var(--main-blue);
+}
+
+.main-container {
+  height: calc(100vh - 100px);
+  background-color: var(--darker-blue);
+}
+
+.secondary-option {
+  font-size: 12px;
+}
+
+.border-15 {
+  border-radius: 15px;
+}
+
+.input {
+  background-color: var(--main-blue);
+  border-color: white;
+  color: white;
+  font-size: 12px;
+}
+
+.form-control:active,
+.form-control:focus {
+  background-color: var(--main-blue);
+  color: white;
+  box-shadow: none;
+  outline: none;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input::selection {
+  background-color: var(--orange);
+}
+
+.form-control:disabled {
+  background-color: var(--main-blue);
+}
+
+.submit-button {
+  background-color: var(--main-blue);
+  border-color: var(--orange);
+  color: white;
+  font-size: 15px;
+  padding: 15px 30px;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  color: white;
+  filter: brightness(1.5);
+}
+
+.shadow-light {
+  box-shadow: 0px 0px 7px #ffffff;
+}
+
+.shadow-lighter {
+  box-shadow: 0px 2px 10px 6px rgba(91, 91, 91, 0.25);
+}
+
+.transform-scale__matrix {
+  transform: scale(0.7);
+}
+
+.transform-scale__divertidamente {
+  transform: scale(1.2);
+}
+
+.transform-scale__viavis {
+  transform: scale(0.2);
+}
+
+@media (min-width: 992px) {
+  .input {
+    font-size: 15px;
+  }
+  .secondary-option {
+    font-size: 15px;
+  }
+  .submit-button {
+    font-size: 20px;
+    padding: 15px 50px;
+  }
+}
