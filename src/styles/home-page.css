@@ -29,7 +29,6 @@ main {
 #box {
   background: linear-gradient(214.16deg, #0b0e1a 71.71%, #0c1d39 86.36%);
   box-shadow: 0px 2px 10px 6px rgba(91, 91, 91, 0.25);
-  height: calc(100vw - 50px);
 }
 
 .relative {
@@ -54,6 +53,8 @@ main {
 
 .img-main {
   border-radius: 15px 15px 0 15px;
+  width: auto;
+  height: 550px;
 }
 
 .main-fs {
@@ -62,6 +63,8 @@ main {
 
 .description-fs {
   font-size: 12px;
+  overflow-wrap: break-word;
+  margin-top: 70px;
 }
 
 .btn-fs {
