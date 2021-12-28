@@ -1,0 +1,127 @@
+:root {
+    --darker-blue: #011126;
+    --main-blue: #011c40;
+    --lighter-blue: #2f66a1;
+    --orange: #f29a2e;
+  }
+
+header {
+    background-color: var(--darker-blue);
+  }
+
+  .logo {
+    color: var(--orange);
+    font-size: 28px;
+    margin: 0;
+  }
+  
+
+body {
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  #soul {
+      background-color: var(--darker-blue);
+      border-radius: 15px;
+      padding-left: 60px;
+      padding-right: 50px;
+      background-image: linear-gradient(to right,black,var(--darker-blue) 10%,black,var(--darker-blue));
+  }
+
+  #botao-soul {
+      background-color: var(--orange);
+      border-color: var(--orange);
+      border-radius: 12px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 15px 30px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: var(--darker-blue);
+    border-radius: 15px;
+  }
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--orange);
+    border-radius: 15px;
+  }
+
+  main {
+    background-color: var(--main-blue);
+  }
+  
+  .main-background {
+    background-color: var(--darker-blue);
+  }
+  
+  .secondary-option {
+    font-size: 12px;
+  }
+  
+  .border-15 {
+    border-radius: 15px;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+./* form-control:active,
+.form-control:focus {
+  background-color: var(--main-blue);
+  color: white;
+  box-shadow: none;
+  outline: none;
+} */
+  
+ /*  input::placeholder {
+    color: gray;
+  }
+
+  .input {
+    background-color: var(--main-blue);
+    border-color: white;
+    color: white;
+    font-size: 12px;
+  } */
+
+  .poster img {
+    border-radius: 15px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 30px;
+  }
+
+.carousel {
+  display: none;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: var(--darker-blue);
+  padding: 30px;
+}
+
+#rodape {
+  color: var(--orange);
+  text-align: center;
+}
+
+@media (max-width: 790px) {
+  .carousel {
+      display: block;
+      text-align: center;
+  }
+  .movies {
+      display: none;
+  }
+}
