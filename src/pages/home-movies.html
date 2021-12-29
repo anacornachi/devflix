@@ -19,32 +19,39 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style_home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./../styles/style_home.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-light">
             <div class="container">
               <a class="navbar-brand" href="#"
                 ><h1 class="logo fw-bold fs-4 fs-lg-2">Devflix</h1></a
               >
 
+              <div class="d-flex align-itens-between gap-lg-5">
+                <div class="col">
+              <button class="btn btn-default text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="bi bi-search"></i>
+                  </button>
+            <form class="collapse navbar-form" id="collapseExample">
+              <div class="input-group">
+                <input type="text" class="form-control input border-15" placeholder="Busque por título">
+              </div>
+          </form>
+              </div>
 
-              <!-- <div class="d-flex justify-content-end">
-                <div class="mb-3">
-                  <input type="text" class="form-control" id="exampleFormControlInput" placeholder="Busque por título">
-                </div> -->
-
-                <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"   data-bs-target="#navbarNavAltMarkup"
+              <div class="row">
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"   data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                <i class="bi bi-person-circle"></i>
                 </button>
-
                     <div
                     class="collapse navbar-collapse justify-content-end"
                     id="navbarNavAltMarkup"
                   >
-                  <div class="navbar-nav gap-lg-5">
+                  <div class="navbar-nav gap-lg-3">
                         <a class="
                         nav-link
                         active
@@ -87,7 +94,7 @@
         <div class="container" id="soul">
           <div class="row">
             <div class="col-lg-4">
-            <img src="./img/soul2.png" class="img-fluid float-end" id="img-soul">
+            <img src="./../img/soul2.png" class="img-fluid float-end" id="img-soul">
             </div>
             <div class="col-lg-7">
               <h1 class="fw-bold text-white text-end p-4">Uma novidade chamada, Soul.</h1>
@@ -101,27 +108,61 @@
 
         <section>
           <h2 class="fw-bold text-white p-4 mt-5">Categorias</h2>
-          <div id="movies" class="movies">
+          <div class="row justify-content-center m-3 mt-2">
+            <div class="col-6 col-sm-2">
+            <div class="card">
+          <img src="./../img/toy-story.jpg" class="card-img-top rounded-3" alt="...">
+            <h5 class="card-text text-center fw-bold text-white">Animação</h5>
+          </div>
+          </div>
+        <div class="col-6 col-sm-2">
+        <div class="card">
+          <img src="./../img/john-wick.jpg" class="card-img-top rounded-3" alt="...">
+            <h5 class="card-text text-center fw-bold text-white">Ação</h5>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2">
+        <div class="card">
+          <img src="./../img/parasita.jpg" class="card-img-top rounded-3" alt="...">
+            <h5 class="card-text text-center fw-bold text-white">Drama</h5>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2">
+        <div class="card">
+          <img src="./../img/got.jpg" class="card-img-top rounded-3" alt="...">
+            <h5 class="card-text text-center fw-bold text-white">Séries</h5>
+          </div>
+        </div>
+        <div class="col-8 col-sm-2">
+        <div class="card">
+          <img src="./../img/it-acoisa.jpg" class="card-img-top rounded-3" alt="...">
+            <h5 class="card-text text-center fw-bold text-white">Terror</h5>
+          </div>
+          </div>
+        </div>
+
+
+         <!--  <div id="movies" class="movies">
               <div class="container">
                   <div class="row justify-content-center align-items-center">
                       <div class="col-md-4 col-lg-2">
-                        <img src="./img/toy-story.jpg" class="img-fluid rounded-3" alt="">
+                        <img src="./../img/toy-story.jpg" class="img-fluid rounded-3" alt="">
                         <h5 class="fw-bold text-white text-center">Animação</h5>
                       </div>
                       <div class="col-md-4 col-lg-2">
-                          <img src="./img/john-wick.jpg" class="img-fluid rounded-3" alt="">
+                          <img src="./../img/john-wick.jpg" class="img-fluid rounded-3" alt="">
                           <h5 class="fw-bold text-white text-center">Ação</h5>
                       </div>
                       <div class="col-md-4 col-lg-2">
-                        <img src="./img/parasita.jpg" class="img-fluid rounded-3" alt="">
+                        <img src="./../img/parasita.jpg" class="img-fluid rounded-3" alt="">
                         <h5 class="fw-bold text-white text-center">Drama</h5>
                     </div>
                       <div class="col-md-4 col-lg-2">
-                      <img src="./img/got.jpg" class="img-fluid rounded-3" alt="">
+                      <img src="./../img/got.jpg" class="img-fluid rounded-3" alt="">
                       <h5 class="fw-bold text-white text-center">Séries</h5>
                   </div>
                       <div class="col-md-4 col-lg-2">
-                    <img src="./img/it-acoisa.jpg" class="img-fluid rounded-3" alt="">
+                    <img src="./../img/it-acoisa.jpg" class="img-fluid rounded-3" alt="">
                     <h5 class="fw-bold text-white text-center">Terror</h5>
                 </div>
                   </div>
@@ -132,47 +173,49 @@
               <div class="carousel slide" data-bs-ride="carousel">
                 <figure class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="./img/toy-story.jpg" class="rounded mx-auto d-block" alt="...">
+                    <img src="./../img/toy-story.jpg" class="rounded mx-auto d-block" alt="...">
                     <div class="carousel-caption">
                       <h1 class="fw-bold text-center">Animação</h1>
                     </div>                      
                   </div>
                   <div class="carousel-item">
-                    <img src="./img/john-wick.jpg" class="rounded mx-auto d-block" alt="...">
+                    <img src="./../img/john-wick.jpg" class="rounded mx-auto d-block" alt="...">
                     <div class="carousel-caption">
                     <h1 class="fw-bold text-center">Ação</h1>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="./img/parasita.jpg" class="rounded mx-auto d-block" alt="...">
+                    <img src="./../img/parasita.jpg" class="rounded mx-auto d-block" alt="...">
                     <div class="carousel-caption">
                     <h1 class="fw-bold text-center">Drama</h1>
                   </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="./img/got.jpg" class="rounded mx-auto d-block" alt="...">
+                    <img src="./../img/got.jpg" class="rounded mx-auto d-block" alt="...">
                     <div class="carousel-caption">
                     <h1 class="fw-bold text-center">Séries</h1>
                   </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="./img/it-acoisa.jpg" class="rounded mx-auto d-block" alt="...">
+                    <img src="./../img/it-acoisa.jpg" class="rounded mx-auto d-block" alt="...">
                     <div class="carousel-caption">
                     <h1 class="fw-bold text-center">Terror</h1>
                   </div>
                   </div>
                 </figure>
                 </div>
-              </div>
+              </div> -->
         </section>
 
         <section>
           <h2 class="fw-bold text-white p-4">Animação</h2>
-          <div class="container poster">
+          <div class="poster">
+          <div class="container">
             <div class="col-md-4 col-lg-12">
               <div class="row justify-content-center">
-              <img src="./img/raya-dragao.jpg" class="img-fluid" alt="">
+              <img src="./../img/raya-dragao.jpg" class="img-fluid" alt="">
             </div>
+          </div>
           </div>
           </div>
         </section>
@@ -183,52 +226,52 @@
                   <div class="row justify-content-center">
                       <div class="col-md-4 col-lg-2">
                         <a href="#">
-                          <img src="./img/madagascar.jpg" class=" rounded img-fluid" alt="">
+                          <img src="./../img/madagascar.jpg" class=" rounded img-fluid" alt="">
                         </a>
                       </div>
                       <div class="col-md-4 col-lg-2">
                         <a href="#">
-                          <img src="./img/sooul.jpg" class=" rounded img-fluid" alt="">
+                          <img src="./../img/sooul.jpg" class=" rounded img-fluid" alt="">
                         </a>
                       </div>
                       <div class="col-md-4 col-lg-2">
                         <a href="#">
-                        <img src="./img/toy.jpg" class="rounded img-fluid" alt="">
+                        <img src="./../img/toy.jpg" class="rounded img-fluid" alt="">
                         </a>
                     </div>
                       <div class="col-md-4 col-lg-2">
                       <a href="#">
-                      <img src="./img/zootopia.jpg" class="rounded img-fluid" alt="">
+                      <img src="./../img/zootopia.jpg" class="rounded img-fluid" alt="">
                       </a>
                   </div>
                       <div class="col-md-4 col-lg-2">
                     <a href="#">
-                    <img src="./img/divertidamente.jpg" class="rounded img-fluid" alt="">
+                    <img src="./../img/divertidamente.jpg" class="rounded img-fluid" alt="">
                     </a>
                 </div>
                   </div>
               </div>
           </div>
-         <!--  <br>
+          <br>
           <div class="container">
-            <div class="row">         
+            <div class="d-flex justify-content-center">         
           <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img/madagascar.jpg" class="rounded w-100 d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/sooul.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src=". --><!-- /img/toy.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/zootopia.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/toy.jpg" class="d-block w-100" alt="...">
-              </div>
+              <a class="carousel-item active">
+                <img src="./../img/madagascar.jpg" class="rounded w-100 d-block" alt="...">
+              </a>
+              <a class="carousel-item">
+                <img src="./../img/sooul.jpg" class="rounded w-100 d-block" alt="...">
+              </a>
+              <a class="carousel-item">
+                <img src="./../img/toy.jpg" class="rounded w-100 d-block" alt="...">
+              </a>
+              <a class="carousel-item">
+                <img src="./../img/zootopia.jpg" class="rounded w-100 d-block" alt="...">
+              </a>
+              <a class="carousel-item">
+                <img src="./../img/divertidamente.jpg" class="rounded w-100 d-block" alt="...">
+              </a>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -241,7 +284,7 @@
           </div>
           </div>
           </div>
-          </div> -->
+          </div>
         </section>
 
         <section>
@@ -249,10 +292,11 @@
           <div class="container poster">
             <div class="col-md-4 col-lg-12">
               <div class="row justify-content-center">
-              <img src="./img/velozes.jpg" class="img-fluid" alt="">
+              <img src="./../img/velozes.jpg" class="img-fluid" alt="">
             </div>
           </div>
           </div>
+        </div>
         </section>
         
         <section>
@@ -261,31 +305,64 @@
                 <div class="row justify-content-center">
                     <div class="col-md-4 col-lg-2">
                       <a href="#">
-                        <img src="./img/transformers.jpg" class=" rounded img-fluid" alt="">
+                        <img src="./../img/transformers.jpg" class=" rounded img-fluid" alt="">
                       </a>
                     </div>
                     <div class="col-md-4 col-lg-2">
                       <a href="#">
-                        <img src="./img/wick.jpg" class=" rounded img-fluid" alt="">
+                        <img src="./../img/wick.jpg" class=" rounded img-fluid" alt="">
                       </a>
                     </div>
                     <div class="col-md-4 col-lg-2">
                       <a href="#">
-                      <img src="./img/furiosos.jpg" class="rounded img-fluid" alt="">
+                      <img src="./../img/furiosos.jpg" class="rounded img-fluid" alt="">
                       </a>
                   </div>
                     <div class="col-md-4 col-lg-2">
                     <a href="#">
-                    <img src="./img/inglorios.jpg" class="rounded img-fluid" alt="">
+                    <img src="./../img/inglorios.jpg" class="rounded img-fluid" alt="">
                     </a>
                 </div>
                     <div class="col-md-4 col-lg-2">
                   <a href="#">
-                  <img src="./img/matrix.jpg" class="rounded img-fluid" alt="">
+                  <img src="./../img/matrix.jpg" class="rounded img-fluid" alt="">
                   </a>
               </div>
                 </div>
             </div>
+        </div>
+        <br>
+        <div class="container">
+          <div class="d-flex justify-content-center">         
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+          <div class="carousel-inner">
+            <a class="carousel-item active">
+              <img src="./../img/transformers.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+            <a class="carousel-item">
+              <img src="./../img/velozes.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+            <a class="carousel-item">
+              <img src="./../img/wick.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+            <a class="carousel-item">
+              <img src="./../img/inglorios.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+            <a class="carousel-item">
+              <img src="./../img/matrix.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>  
+        </div>
+        </div>
+        </div>
         </div>
         </section>
 
@@ -294,7 +371,7 @@
           <div class="container poster">
             <div class="col-md-4 col-lg-12">
               <div class="row justify-content-center">
-              <img src="./img/omenino.jpg" class="img-fluid" alt="">
+              <img src="./../img/omenino.jpg" class="img-fluid" alt="">
             </div>
           </div>
           </div>
@@ -306,31 +383,64 @@
                 <div class="row justify-content-center">
                     <div class="col-md-4 col-lg-2">
                       <a href="#">
-                        <img src="./img/horas.jpg" class=" rounded img-fluid" alt="">
+                        <img src="./../img/horas.jpg" class=" rounded img-fluid" alt="">
                       </a>
                     </div>
                     <div class="col-md-4 col-lg-2">
                       <a href="#">
-                        <img src="./img/noma.jpg" class=" rounded img-fluid" alt="">
+                        <img src="./../img/noma.jpg" class=" rounded img-fluid" alt="">
                       </a>
                     </div>
                     <div class="col-md-4 col-lg-2">
                       <a href="#">
-                      <img src="./img/parasite.jpg" class="rounded img-fluid" alt="">
+                      <img src="./../img/parasite.jpg" class="rounded img-fluid" alt="">
                       </a>
                   </div>
                     <div class="col-md-4 col-lg-2">
                     <a href="#">
-                    <img src="./img/nome.jpg" class="rounded img-fluid" alt="">
+                    <img src="./../img/nome.jpg" class="rounded img-fluid" alt="">
                     </a>
                 </div>
                     <div class="col-md-4 col-lg-2">
                   <a href="#">
-                  <img src="./img/day.jpg" class="rounded img-fluid" alt="">
+                  <img src="./../img/day.jpg" class="rounded img-fluid" alt="">
                   </a>
               </div>
                 </div>
             </div>
+        </div>
+        <br>
+        <div class="container">
+          <div class="d-flex justify-content-center">         
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+          <div class="carousel-inner">
+            <a class="carousel-item active">
+              <img src="./../img/noma.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+            <a class="carousel-item">
+              <img src="./../img/nome.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+            <a class="carousel-item">
+              <img src="./../img/parasite.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+            <a class="carousel-item">
+              <img src="./../img/day.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+            <a class="carousel-item">
+              <img src="./../img/horas.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>  
+        </div>
+        </div>
+        </div>
         </div>
         </section>
 
@@ -339,7 +449,7 @@
           <div class="container poster">
             <div class="col-md-4 col-lg-12">
               <div class="row justify-content-center">
-              <img src="./img/dopesick.jpg" class="img-fluid" alt="">
+              <img src="./../img/dopesick.jpg" class="img-fluid" alt="">
             </div>
           </div>
           </div>
@@ -351,31 +461,64 @@
                 <div class="row justify-content-center">
                     <div class="col-md-4 col-lg-2">
                       <a href="#">
-                        <img src="./img/revenge.jpg" class=" rounded img-fluid" alt="">
+                        <img src="./../img/revenge.jpg" class=" rounded img-fluid" alt="">
                       </a>
                     </div>
                     <div class="col-md-4 col-lg-2">
                       <a href="#">
-                        <img src="./img/raio.jpg" class=" rounded img-fluid" alt="">
+                        <img src="./../img/raio.jpg" class=" rounded img-fluid" alt="">
                       </a>
                     </div>
                     <div class="col-md-4 col-lg-2">
                       <a href="#">
-                      <img src="./img/game.jpg" class="rounded img-fluid" alt="">
+                      <img src="./../img/game.jpg" class="rounded img-fluid" alt="">
                       </a>
                   </div>
                     <div class="col-md-4 col-lg-2">
                     <a href="#">
-                    <img src="./img/sabrina.jpg" class="rounded img-fluid" alt="">
+                    <img src="./../img/sabrina.jpg" class="rounded img-fluid" alt="">
                     </a>
                 </div>
                     <div class="col-md-4 col-lg-2">
                   <a href="#">
-                  <img src="./img/them.jpg" class="rounded img-fluid" alt="">
+                  <img src="./../img/them.jpg" class="rounded img-fluid" alt="">
                   </a>
               </div>
                 </div>
             </div>
+        </div>
+        <br>
+        <div class="container">
+          <div class="d-flex justify-content-center">         
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+          <div class="carousel-inner">
+            <a class="carousel-item active">
+              <img src="./../img/game.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+            <a class="carousel-item">
+              <img src="./../img/revenge.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+            <a class="carousel-item">
+              <img src="./../img/them.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+            <a class="carousel-item">
+              <img src="./../img/sabrina.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+            <a class="carousel-item">
+              <img src="./../img/raio.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>  
+        </div>
+        </div>
+        </div>
         </div>
         </section>
 
@@ -384,7 +527,7 @@
           <div class="container poster">
             <div class="col-md-4 col-lg-12">
               <div class="row justify-content-center">
-              <img src="./img/panico.jpg" class="img-fluid" alt="">
+              <img src="./../img/panico.jpg" class="img-fluid" alt="">
             </div>
           </div>
           </div>
@@ -396,31 +539,64 @@
                 <div class="row justify-content-center">
                     <div class="col-md-4 col-lg-2">
                       <a href="#">
-                        <img src="./img/jigsaw.jpg" class=" rounded img-fluid" alt="">
+                        <img src="./../img/jigsaw.jpg" class=" rounded img-fluid" alt="">
                       </a>
                     </div>
                     <div class="col-md-4 col-lg-2">
                       <a href="#">
-                        <img src="./img/it.jpg" class=" rounded img-fluid" alt="">
+                        <img src="./../img/it.jpg" class=" rounded img-fluid" alt="">
                       </a>
                     </div>
                     <div class="col-md-4 col-lg-2">
                       <a href="#">
-                      <img src="./img/invocacao.jpg" class="rounded img-fluid" alt="">
+                      <img src="./../img/invocacao.jpg" class="rounded img-fluid" alt="">
                       </a>
                   </div>
                     <div class="col-md-4 col-lg-2">
                     <a href="#">
-                    <img src="./img/chamado.jpg" class="rounded img-fluid" alt="">
+                    <img src="./../img/chamado.jpg" class="rounded img-fluid" alt="">
                     </a>
                 </div>
                     <div class="col-md-4 col-lg-2">
                   <a href="#">
-                  <img src="./img/halloween.jpg" class="rounded img-fluid" alt="">
+                  <img src="./../img/halloween.jpg" class="rounded img-fluid" alt="">
                   </a>
               </div>
                 </div>
             </div>
+        </div>
+        <br>
+        <div class="container">
+          <div class="d-flex justify-content-center">         
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+          <div class="carousel-inner">
+            <a class="carousel-item active">
+              <img src="./../img/chamado.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+            <a class="carousel-item">
+              <img src="./../img/halloween.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+            <a class="carousel-item">
+              <img src="./../img/it.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+            <a class="carousel-item">
+              <img src="./../img/jigsaw.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+            <a class="carousel-item">
+              <img src="./../img/invocacao.jpg" class="rounded w-100 d-block" alt="...">
+            </a>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>  
+        </div>
+        </div>
+        </div>
         </div>
         </section>
         

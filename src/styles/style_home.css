@@ -40,6 +40,12 @@ body {
       padding: 15px 30px;
   }
 
+  .card {
+    object-fit: contain;
+    background: var(--main-blue);
+    margin-bottom: 15px;
+  }
+
   ::-webkit-scrollbar-track {
     background-color: var(--darker-blue);
     border-radius: 15px;
@@ -73,32 +79,36 @@ body {
     cursor: pointer;
   }
 
-./* form-control:active,
+.form-control:active,
 .form-control:focus {
   background-color: var(--main-blue);
   color: white;
   box-shadow: none;
   outline: none;
-} */
+}
+
+.input {
+  background-color: var(--main-blue);
+  border-color: white;
+  color: white;
+  font-size: 12px;
+}
   
- /*  input::placeholder {
+  input::placeholder {
     color: gray;
   }
 
-  .input {
-    background-color: var(--main-blue);
-    border-color: white;
-    color: white;
-    font-size: 12px;
-  } */
+.form-control:disabled {
+  background-color: var(--main-blue);
+}
 
-  .poster img {
+.poster img {
     border-radius: 15px;
     height: 300px;
     object-fit: cover;
     object-position: top;
     margin-bottom: 30px;
-  }
+}
 
 .carousel {
   display: none;
@@ -122,6 +132,12 @@ footer {
       text-align: center;
   }
   .movies {
+      display: none;
+  }
+}
+
+@media (max-width: 790px) {
+  .poster {
       display: none;
   }
 }
