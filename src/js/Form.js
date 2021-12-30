@@ -1,6 +1,7 @@
 class ValidateForm {
   constructor() {
     this.form = document.querySelector(".needs-validation");
+    this.inputs = document.querySelectorAll("input");
 
     this.form.addEventListener("submit", (event) => {
       const fields = Object.keys(this.form).map((item) => this.form[item]);
