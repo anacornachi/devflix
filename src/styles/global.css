@@ -1,0 +1,161 @@
+body {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+:root {
+  --darker-blue: #011126;
+  --main-blue: #011c40;
+  --lighter-blue: #2f66a1;
+  --orange: #f29a2e;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--darker-blue);
+  border-radius: 15px;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+  border-radius: 15px;
+}
+
+header {
+  background-color: var(--darker-blue);
+}
+
+.logo {
+  /* font-family: "Rubik Mono One", sans-serif; */
+  color: var(--orange);
+  font-size: 28px;
+  margin: 0;
+}
+
+main {
+  background-color: var(--main-blue);
+  height: 100%;
+}
+
+.main-container {
+  background-color: var(--darker-blue);
+  height: calc(100vh - 100px);
+}
+
+.secondary-option {
+  font-size: 12px;
+}
+
+.border-15 {
+  border-radius: 15px;
+}
+
+.input {
+  background-color: var(--main-blue);
+  border-color: white;
+  color: white;
+  font-size: 12px;
+}
+
+.form-control:active,
+.form-control:focus {
+  background-color: var(--main-blue);
+  color: white;
+  box-shadow: none;
+  outline: none;
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input::selection {
+  background-color: var(--orange);
+}
+
+.form-control:disabled {
+  background-color: var(--main-blue);
+}
+
+.submit-button {
+  background-color: var(--main-blue);
+  border-color: white;
+  color: white;
+  font-size: 15px;
+  padding: 15px 30px;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  color: white;
+  border-color: var(--orange);
+}
+
+.p-relative {
+  position: relative;
+}
+
+.recovery__image {
+  object-fit: contain;
+  height: 100%;
+}
+
+.recovery__title {
+  white-space: wrap;
+}
+
+.height {
+  height: 50%;
+}
+
+.nav-link {
+  transition: 0.5s;
+  border: none;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid var(--orange);
+}
+
+@media (min-width: 768px) {
+  .secondary-option {
+    font-size: 15px;
+  }
+  .input {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .input {
+    font-size: 15px;
+  }
+  .secondary-option {
+    font-size: 15px;
+  }
+  .submit-button {
+    font-size: 20px;
+    padding: 15px 50px;
+  }
+  .recovery__title {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .height {
+    height: 100%;
+  }
+  .recovery__image {
+    transform: scale(0.7);
+  }
+}
