@@ -22,6 +22,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/recovery-page.css" />
   </head>
   <body>
     <header>
@@ -91,32 +92,18 @@
       </nav>
     </header>
     <main class="p-3 p-md-4">
-      <div
-        class="
-          container
-          main-container
-          py-3
-          px-4
-          p-md-5
-          border-15
-          d-flex
-          flex-column
-          align-items-center
-          justify-content-center
-          align-items-md-start
-          gap-3
-        "
-      >
-        <section class="h-100 row d-flex flex-column flex-md-row w-100">
-          <form
-            class="col-12 gap-4 gap-lg-0 d-flex flex-column p-0 height col-lg-4"
-            action=""
-          >
-            <h2 class="fs-1 fw-bold text-white mb-2 recovery__title">
+      <div class="container main-container p-3 p-md-5 border-15">
+        <section class="row h-100 d-flex flex-column flex-md-row w-100 m-0">
+          <div class="col-12 col-lg-4 p-0 height d-flex flex-column gap-40">
+            <h2 class="fs-1 fw-bold text-white recovery__title p-0 mb-4">
               Recupere sua senha
             </h2>
-            <div class="content gap-4 gap-lg-0 d-flex flex-column">
-              <p class="text-white secondary-option">
+            <form
+              class="col-12 gap-3 gap-lg-5 d-flex flex-column p-0"
+              action=""
+              data-main-content
+            >
+              <p class="text-white secondary-text">
                 Enviaremos um email com instruções de como redefinir sua senha.
               </p>
               <label for="validation__email" class="form-label text-white"
@@ -134,24 +121,24 @@
               <button
                 class="
                   btn
-                  submit-button
+                  action-button
                   border-15
                   mt-3
                   align-self-center
                   justify-self-center
                 "
-                name="recover-button"
-                data-recover-button
+                name="recovery-button"
+                data-recovery-button
               >
                 Recuperar
               </button>
-              <p class="secondary-option mt-3">
+              <p class="secondary-text mt-3">
                 <a class="text-white border-bottom border-warning" href=""
                   >Não lembro meu e-mail</a
                 >
               </p>
-            </div>
-          </form>
+            </form>
+          </div>
           <div
             class="
               col-12

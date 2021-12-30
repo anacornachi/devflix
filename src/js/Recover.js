@@ -1,22 +1,22 @@
 class Recover {
   constructor() {
-    this.content = document.querySelector(".content");
-    this.recoverButton = document.querySelector("[data-recover-button]");
-    this.recoverButton.addEventListener("click", (event) => {
+    this.content = document.querySelector("[data-main-content]");
+    this.recoveryButton = document.querySelector("[data-recovery-button]");
+
+    this.recoveryButton.addEventListener("click", (event) => {
       event.preventDefault();
       this.input = document.querySelector(".input");
       this.recoveryPassword(this.input.value);
     });
   }
 
-  recoveryPassword(teste) {
-    console.log(teste);
+  recoveryPassword(email) {
     this.content.innerHTML = `<p class="text-white secondary-option">
-      Enviamos um link de recuperação para seu e-mail <span class="fw-bold">${teste}</span></p>
+      Enviamos um link de recuperação para seu e-mail <span class="fw-bold">${email}</span></p>
     <button
       class="
         btn
-        submit-button
+        action-button
         border-15
         mt-3
         align-self-center
