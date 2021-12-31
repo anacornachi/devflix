@@ -1,28 +1,4 @@
-:root {
-    --darker-blue: #011126;
-    --main-blue: #011c40;
-    --lighter-blue: #2f66a1;
-    --orange: #f29a2e;
-  }
-
-header {
-    background-color: var(--darker-blue);
-  }
-
-.logo {
-    color: var(--orange);
-    font-size: 28px;
-    margin: 0;
-  }
-  
-
-body {
-    box-sizing: border-box;
-    font-family: "Rubik", sans-serif;
-    scroll-behavior: smooth;
-  }
-  
-  #soul {
+ #soul {
       background-color: var(--darker-blue);
       border-radius: 15px;
       padding-left: 60px;
@@ -44,39 +20,6 @@ body {
     object-fit: contain;
     background: var(--main-blue);
     margin-bottom: 15px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background-color: var(--darker-blue);
-    border-radius: 15px;
-  }
-  ::-webkit-scrollbar {
-    width: 4px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: var(--orange);
-    border-radius: 15px;
-  }
-
-  main {
-    background-color: var(--main-blue);
-  }
-  
-  .main-background {
-    background-color: var(--darker-blue);
-  }
-  
-  .secondary-option {
-    font-size: 12px;
-  }
-  
-  .border-15 {
-    border-radius: 15px;
-  }
-  
-  a {
-    text-decoration: none;
-    cursor: pointer;
   }
 
   input {
@@ -110,14 +53,12 @@ body {
     border-radius: 15px;
     height: 300px;
     object-fit: cover;
-    object-position: top;
+    object-position: bottom;
     margin-bottom: 30px;
 }
 
 .carousel {
   display: none;
-  border-radius: 15px;
-  object-fit: cover;
 }
 
 footer {
@@ -135,7 +76,7 @@ footer {
       display: block;
       text-align: center;
   }
-  .movies {
+  .filmes {
       display: none;
   }
   .poster {
