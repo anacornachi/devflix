@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevFlix</title>
+    <title>DevFlix - Entrar</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -90,107 +90,126 @@
         </div>
       </nav>
     </header>
-    <main class="p-3 p-md-4 min-vh-100">
-      <div
-        class="container main-container py-3 p-md-5 border-15 shadow-lighter"
-      >
-        <h2 class="row fs-1 px-2 fw-bold text-white mb-3 mb-md-5">Entrar</h2>
-        <div class="d-flex flex-column flex-row">
-          <form
-            class="
-              row
-              needs-validation
-              d-flex
-              flex-column
-              gap-3
-              align-items-center align-items-md-start
-              justify-content-md-center
-              col-12 col-md-6
-              m-0
-            "
-            novalidate
-          >
-            <div class="row col-12 col-md-6 gap-3 gap-md-4 p-0 w-100">
-              <div class="col-12 p-0">
-                <label for="validation__email" class="form-label text-white"
-                  >E-mail:</label
+    <main class="p-3 p-md-4">
+      <div class="container main-container p-3 p-md-5 border-15">
+        <section class="row h-100 d-flex flex-column flex-md-row w-100 m-0">
+          <div class="col-12 col-lg-4 p-0 height d-flex flex-column gap-40">
+            <h2 class="fs-1 fw-bold text-white main__title p-0 mb-4">Entrar</h2>
+            <form
+              class="
+                col-12
+                gap-3 gap-lg-5
+                d-flex
+                flex-column
+                p-0
+                align-items-center
+              "
+              action=""
+              data-main-content
+            >
+              <div class="row col-12 col-md-6 gap-3 gap-md-4 p-0 w-100">
+                <div class="col-12 p-0">
+                  <label for="validation__email" class="form-label text-white"
+                    >E-mail:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control input border-15"
+                    id="validation__email"
+                    required
+                    placeholder="seuemail@mail.com"
+                    data-mail
+                    name="email"
+                    autofocus
+                  />
+                  <div class="invalid-feedback">
+                    Por favor, insira seu e-mail!
+                  </div>
+                </div>
+                <div class="col-12 p-0">
+                  <label
+                    for="validation__password"
+                    class="form-label text-white"
+                    >Senha:</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control input border-15"
+                    id="validation__password"
+                    required
+                    placeholder="********"
+                    data-password
+                    name="password"
+                  />
+                  <div class="invalid-feedback">
+                    Por favor, insira sua senha!
+                  </div>
+                </div>
+                <p class="text-white secondary-text">
+                  <a
+                    href="#"
+                    class="ms-1 text-white border-bottom border-warning"
+                  >
+                    Esqueci minha senha</a
+                  >
+                </p>
+                <p
+                  class="
+                    text-white
+                    secondary-text
+                    mt-2
+                    d-flex
+                    flex-column flex-md-row
+                    justify-content-center
+                    align-items-center
+                  "
                 >
-                <input
-                  type="email"
-                  class="form-control input border-15"
-                  id="validation__email"
-                  required
-                  placeholder="seuemail@mail.com"
-                  data-mail
-                  name="email"
-                  autofocus
-                />
-                <div class="invalid-feedback">
-                  Por favor, insira seu e-mail!
+                  Ainda não possui conta?
+                  <a
+                    href="#"
+                    class="ms-1 text-white border-bottom border-warning"
+                  >
+                    Cadastre-se por aqui!</a
+                  >
+                </p>
+                <div
+                  class="
+                    col-12
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                >
+                  <button
+                    class="
+                      btn
+                      action-button
+                      border-15
+                      mt-3
+                      align-self-center
+                      justify-self-center
+                    "
+                    name="recovery-button"
+                    data-recovery-button
+                  >
+                    Entrar
+                  </button>
                 </div>
               </div>
-              <div class="col-12 p-0">
-                <label for="validation__password" class="form-label text-white"
-                  >Senha:</label
-                >
-                <input
-                  type="password"
-                  class="form-control input border-15"
-                  id="validation__password"
-                  required
-                  placeholder="********"
-                  data-password
-                  name="password"
-                />
-                <div class="invalid-feedback">Por favor, insira sua senha!</div>
-              </div>
-              <p class="text-white secondary-option">
-                <a
-                  href="#"
-                  class="ms-1 text-white border-bottom border-warning"
-                >
-                  Esqueci minha senha</a
-                >
-              </p>
-              <p
-                class="
-                  text-white
-                  secondary-option
-                  mt-2
-                  d-flex
-                  flex-column flex-md-row
-                  justify-content-center
-                  align-items-center
-                "
-              >
-                Ainda não possui conta?
-                <a
-                  href="#"
-                  class="ms-1 text-white border-bottom border-warning"
-                >
-                  Cadastre-se por aqui!</a
-                >
-              </p>
-              <div
-                class="col-12 d-flex justify-content-center align-items-center"
-              >
-                <button
-                  class="btn submit-button border-15"
-                  type="submit"
-                  data-submit-button
-                  name="submit-button"
-                >
-                  Entrar
-                </button>
-              </div>
-            </div>
+            </form>
           </div>
-          <div class="d-none d-md-block col-6">
-            <h5>teste</h5>
-          
+          <div
+            class="
+              col-12
+              d-none d-lg-flex
+              justify-content-center
+              col-lg-8
+              height
+            "
+          >
+            <img class="" src="../assets/images/main-movies.png" alt="" />
           </div>
-          </form>
-        </div>
+        </section>
       </div>
     </main>
     <script
@@ -198,6 +217,5 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/Form.js"></script>
   </body>
 </html>
