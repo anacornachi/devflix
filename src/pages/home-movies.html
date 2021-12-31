@@ -30,18 +30,16 @@
                 ><h1 class="logo fw-bold fs-4 fs-lg-2">Devflix</h1></a
               >
 
-              <div class="d-flex align-itens-between gap-lg-5">
+              <div class="d-flex align-itens-between gap-5 col-md-3 col-10">
                 <div class="col">
-              <button class="btn btn-default text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    <i class="bi bi-search"></i>
-                  </button>
-            <form class="collapse navbar-form" id="collapseExample">
-              <div class="input-group">
-                <input type="text" class="form-control input border-15" placeholder="Busque por título">
-              </div>
-          </form>
-              </div>
-
+                <form class="navbar-search-form" id="busca" action=" " method=" ">
+                  <input type="text" placeholder="Busque pelo titulo do filme" id="pesquisar">
+                 <button type="submit" class="btn btn-default text-white" id="botao-pesquisar">
+                   <i class="bi bi-search"></i>
+                 </button>
+             </form>
+             </div>
+              
               <div class="row">
                 <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"   data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,7 +87,7 @@
         </header>
 
     <main>
-      <h2 class="fw-bold text-white p-5">Seja bem-vindo, !</h2>
+      <h2 class="fw-bold text-white p-4 mx-5">Seja bem-vindo,<span class="username"></span>!</h2>
       <section>
         <div class="container" id="soul">
           <div class="row">
@@ -107,34 +105,34 @@
       </section>
 
         <section>
-          <h2 class="fw-bold text-white p-4 mt-5">Categorias</h2>
+          <h2 class="fw-bold text-white p-3 mt-5 mx-5">Categorias</h2>
           <div class="row justify-content-center m-3 mt-2">
-            <div class="col-6 col-sm-2">
-            <div class="card">
+            <div class="col-6 col-md-2">
+            <div class="card border-0">
           <img src="./../img/toy-story.jpg" class="card-img-top rounded-3" alt="...">
             <h5 class="card-text text-center fw-bold text-white">Animação</h5>
           </div>
           </div>
-        <div class="col-6 col-sm-2">
-        <div class="card">
+        <div class="col-6 col-md-2">
+        <div class="card border-0">
           <img src="./../img/john-wick.jpg" class="card-img-top rounded-3" alt="...">
             <h5 class="card-text text-center fw-bold text-white">Ação</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-2">
-        <div class="card">
+        <div class="col-6 col-md-2">
+        <div class="card border-0">
           <img src="./../img/parasita.jpg" class="card-img-top rounded-3" alt="...">
             <h5 class="card-text text-center fw-bold text-white">Drama</h5>
           </div>
         </div>
-        <div class="col-6 col-sm-2">
-        <div class="card">
+        <div class="col-6 col-md-2">
+        <div class="card border-0">
           <img src="./../img/got.jpg" class="card-img-top rounded-3" alt="...">
             <h5 class="card-text text-center fw-bold text-white">Séries</h5>
           </div>
         </div>
-        <div class="col-8 col-sm-2">
-        <div class="card">
+        <div class="col-8 col-md-2">
+        <div class="card border-0">
           <img src="./../img/it-acoisa.jpg" class="card-img-top rounded-3" alt="...">
             <h5 class="card-text text-center fw-bold text-white">Terror</h5>
           </div>
@@ -208,7 +206,7 @@
         </section>
 
         <section>
-          <h2 class="fw-bold text-white p-4">Animação</h2>
+          <h2 class="fw-bold text-white p-3 mt-4 mx-5">Animação</h2>
           <div class="poster">
           <div class="container">
             <div class="col-md-4 col-lg-12">
@@ -288,7 +286,7 @@
         </section>
 
         <section>
-          <h2 class="fw-bold text-white p-4">Ação</h2>
+          <h2 class="fw-bold text-white p-3 mt-4 mx-5">Ação</h2>
           <div class="container poster">
             <div class="col-md-4 col-lg-12">
               <div class="row justify-content-center">
@@ -367,7 +365,7 @@
         </section>
 
         <section>
-          <h2 class="fw-bold text-white p-4">Drama</h2>
+          <h2 class="fw-bold text-white p-3 mt-4 mx-5">Drama</h2>
           <div class="container poster">
             <div class="col-md-4 col-lg-12">
               <div class="row justify-content-center">
@@ -445,7 +443,7 @@
         </section>
 
         <section>
-          <h2 class="fw-bold text-white p-4">Séries</h2>
+          <h2 class="fw-bold text-white p-3 mt-4 mx-5">Séries</h2>
           <div class="container poster">
             <div class="col-md-4 col-lg-12">
               <div class="row justify-content-center">
@@ -523,7 +521,7 @@
         </section>
 
         <section>
-          <h2 class="fw-bold text-white p-4">Terror</h2>
+          <h2 class="fw-bold text-white p-3 mt-4 mx-5">Terror</h2>
           <div class="container poster">
             <div class="col-md-4 col-lg-12">
               <div class="row justify-content-center">
@@ -613,5 +611,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="./../js/main.js"></script>
 </body>
 </html>

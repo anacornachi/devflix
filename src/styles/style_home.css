@@ -9,7 +9,7 @@ header {
     background-color: var(--darker-blue);
   }
 
-  .logo {
+.logo {
     color: var(--orange);
     font-size: 28px;
     margin: 0;
@@ -79,28 +79,32 @@ body {
     cursor: pointer;
   }
 
-.form-control:active,
-.form-control:focus {
-  background-color: var(--main-blue);
-  color: white;
-  box-shadow: none;
-  outline: none;
-}
+  input {
+    height: 30px;
+    font-size: 12px;
+    padding-left: 50px;
+    width: 0;
+    position: absolute;
+    left: auto;
+    top: 15px;
+    border: none;
+    background: none;
+    outline: none;
+    transition: width 1s ease-out;
+    cursor: pointer;
+  }
 
-.input {
-  background-color: var(--main-blue);
-  border-color: white;
-  color: white;
-  font-size: 12px;
+  input:focus { 
+    border-radius: 20px;
+    width: 230px;
+    transition: width 1s ease-in;
+    background-color: var(--main-blue);
+    color: white;
 }
-  
+ 
   input::placeholder {
     color: gray;
   }
-
-.form-control:disabled {
-  background-color: var(--main-blue);
-}
 
 .poster img {
     border-radius: 15px;
@@ -134,10 +138,12 @@ footer {
   .movies {
       display: none;
   }
-}
-
-@media (max-width: 790px) {
   .poster {
-      display: none;
+    display: none;
+  }
+  input {
+    top: 45px;
   }
 }
+
+
