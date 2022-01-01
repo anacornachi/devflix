@@ -1,0 +1,21 @@
+.recovery__image {
+  object-fit: contain;
+  height: 100%;
+  max-width: inherit;
+}
+
+.recovery__title {
+  white-space: wrap;
+}
+
+@media (min-width: 992px) {
+  .recovery__title {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .recovery__image {
+    transform: scale(0.7);
+  }
+}

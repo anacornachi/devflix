@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevFlix - Recupere sua senha</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/recovery-page.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><h1 class="logo fw-bold fs-4">Devflix</h1></a
+          >
+          <button
+            class="navbar-toggler border-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="material-icons text-white d-flex align-items-center">
+              menu
+            </span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav gap-lg-5">
+              <a
+                class="
+                  nav-link
+                  active
+                  d-flex
+                  justify-content-center
+                  fw-bold
+                  text-white
+                "
+                aria-current="page"
+                href="#"
+                >Contato</a
+              >
+              <a
+                class="
+                  nav-link
+                  active
+                  d-flex
+                  justify-content-center
+                  fw-bold
+                  text-white
+                "
+                href="#"
+                >Cadastrar-se</a
+              >
+              <a
+                class="
+                  nav-link
+                  active
+                  d-flex
+                  justify-content-center
+                  fw-bold
+                  text-white
+                "
+                href="#"
+                >Entrar</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="p-3 p-md-4">
+      <div class="container main-container p-3 p-md-5 border-15">
+        <section class="row h-100 d-flex flex-column flex-md-row w-100 m-0">
+          <div class="col-12 col-lg-4 p-0 height d-flex flex-column gap-40">
+            <h2 class="fs-1 fw-bold text-white recovery__title p-0 mb-4">
+              Recupere sua senha
+            </h2>
+            <form
+              class="col-12 gap-3 gap-lg-5 d-flex flex-column p-0"
+              action=""
+              data-main-content
+            >
+              <p class="text-white secondary-text">
+                Enviaremos um email com instruções de como redefinir sua senha.
+              </p>
+              <label for="validation__email" class="form-label text-white"
+                >E-mail:</label
+              >
+              <input
+                type="email"
+                class="form-control input border-15 w-100"
+                id="validation__email"
+                required
+                placeholder="seu@email.com.br"
+                data-email
+                name="email"
+              />
+              <button
+                class="
+                  btn
+                  action-button
+                  border-15
+                  mt-3
+                  align-self-center
+                  justify-self-center
+                "
+                name="recovery-button"
+                data-recovery-button
+              >
+                Recuperar
+              </button>
+              <p class="secondary-text mt-3">
+                <a class="text-white border-bottom border-warning" href=""
+                  >Não lembro meu e-mail</a
+                >
+              </p>
+            </form>
+          </div>
+          <div
+            class="
+              col-12
+              d-none d-md-flex
+              justify-content-center
+              col-lg-8
+              height
+            "
+          >
+            <img
+              class="recovery__image"
+              src="../assets/images/recovery__image.png"
+              alt=""
+            />
+          </div>
+        </section>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/Recover.js"></script>
+  </body>
+</html>
