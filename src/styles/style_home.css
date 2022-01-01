@@ -22,14 +22,14 @@
     margin-bottom: 15px;
   }
 
-  input {
+  .form-control {
     height: 30px;
     font-size: 12px;
     padding-left: 50px;
     width: 0;
     position: absolute;
     left: auto;
-    top: 15px;
+    top: 15px; 
     border: none;
     background: none;
     outline: none;
@@ -37,14 +37,14 @@
     cursor: pointer;
   }
 
-  input:focus { 
+  .form-control:focus { 
     border-radius: 20px;
     width: 230px;
     transition: width 1s ease-in;
     background-color: var(--main-blue);
     color: white;
-}
- 
+  } 
+
   input::placeholder {
     color: gray;
   }
@@ -82,7 +82,7 @@ footer {
   .poster {
     display: none;
   }
-  input {
+  .form-control {
     top: 45px;
   }
 }
