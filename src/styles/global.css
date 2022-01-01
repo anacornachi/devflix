@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 :root {
   --darker-blue: #011126;
   --main-blue: #011c40;
@@ -25,13 +30,9 @@ body {
   scroll-behavior: smooth;
 }
 
+
 header {
   background-color: var(--darker-blue);
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .logo {
@@ -51,6 +52,10 @@ a {
 
 .secondary-text {
   font-size: 12px;
+}
+
+main {
+  background-color: var(--main-blue);
 }
 
 .input {
@@ -91,6 +96,10 @@ input::selection {
 .action-button {
   background-color: var(--main-blue);
   border-color: white;
+
+.submit-button {
+  background-color: var(--main-blue);
+  border-color: var(--orange);
   color: white;
   font-size: 15px;
   padding: 15px 30px;
@@ -108,12 +117,6 @@ input::selection {
 
 .main__title {
   white-space: wrap;
-}
-
-@media (min-width: 576px) {
-  .secondary-text {
-    font-size: 15px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -136,10 +139,22 @@ input::selection {
   .main__title {
     white-space: nowrap;
   }
+   .secondary-option {
+    font-size: 15px;
+  }
+  .submit-button {
+    font-size: 20px;
+    padding: 15px 50px;
+  }
 }
 
 @media (min-width: 1200px) {
   .gap-40 {
     gap: 120px;
   }
+
+.submit-button:hover {
+  color: white;
+  filter: brightness(1.5);
 }
+
