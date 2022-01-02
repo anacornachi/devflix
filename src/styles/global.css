@@ -51,14 +51,16 @@ body {
     /* height: calc(100vh - 100px); */
     background-color: var(--darker-blue);
     border-radius: 20px;
-
     min-height: fit-content;
+    min-height: 550px;
+    
+    
     
   }
 
 
 img{
-    border-radius: 20px;
+    border-radius: 15px;
    
 }
 
