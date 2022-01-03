@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevFlix - Entrar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/global.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><h1 class="logo fw-bold fs-4">Devflix</h1></a
+          >
+          <button
+            class="navbar-toggler border-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="material-icons text-white d-flex align-items-center">
+              menu
+            </span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav gap-lg-5">
+              <a
+                class="
+                  nav-link
+                  active
+                  d-flex
+                  justify-content-center
+                  fw-bold
+                  text-white
+                "
+                aria-current="page"
+                href="#"
+                >Contato</a
+              >
+              <a
+                class="
+                  nav-link
+                  active
+                  d-flex
+                  justify-content-center
+                  fw-bold
+                  text-white
+                "
+                href="../pages/cadastro.html"
+                >Cadastrar-se</a
+              >
+              <a
+                class="
+                  nav-link
+                  active
+                  d-flex
+                  justify-content-center
+                  fw-bold
+                  text-white
+                "
+                href="../pages/login.html"
+                >Entrar</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="p-3 p-md-4">
+      <div class="container main-container p-3 p-md-5 border-15">
+        <section class="row h-100 d-flex flex-column flex-md-row w-100 m-0">
+          <div class="col-12 col-lg-4 p-0 height d-flex flex-column gap-40">
+            <h2 class="fs-1 fw-bold text-white main__title p-0 mb-4">Entrar</h2>
+            <form
+              class="
+                col-12
+                gap-3 gap-lg-5
+                d-flex
+                flex-column
+                p-0
+                align-items-center
+              "
+              data-sign-in
+              action=""
+            >
+              <div class="row col-12 col-md-6 gap-3 gap-md-4 p-0 w-100">
+                <div class="col-12 p-0">
+                  <label for="validation__email" class="form-label text-white"
+                    >E-mail:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control input border-15"
+                    id="validation__email"
+                    required
+                    placeholder="seuemail@mail.com"
+                    data-email
+                    name="email"
+                  />
+                  <div class="invalid-feedback">
+                    Por favor, insira seu e-mail!
+                  </div>
+                </div>
+                <div class="col-12 p-0">
+                  <label
+                    for="validation__password"
+                    class="form-label text-white"
+                    >Senha:</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control input border-15"
+                    id="validation__password"
+                    required
+                    placeholder="********"
+                    data-password
+                    name="password"
+                  />
+                  <div class="invalid-feedback password-error">
+                    Por favor, insira sua senha! (mínimo de 8 caracteres)
+                  </div>
+                </div>
+                <p class="text-white secondary-text">
+                  <a
+                    href="../pages/recuperacao-de-senha.html"
+                    class="ms-1 text-white border-bottom border-warning"
+                  >
+                    Esqueci minha senha</a
+                  >
+                </p>
+                <p class="text-white secondary-text mt-2 d-block">
+                  Ainda não possui conta?
+                  <a
+                    href="../pages/cadastro.html"
+                    class="ms-1 text-white border-bottom border-warning"
+                  >
+                    Cadastre-se por aqui!</a
+                  >
+                </p>
+                <div
+                  class="
+                    col-12
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                >
+                  <button
+                    class="
+                      btn
+                      action-button
+                      border-15
+                      mt-3
+                      align-self-center
+                      justify-self-center
+                    "
+                    name="submit-button"
+                  >
+                    Entrar
+                  </button>
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                    data-modal
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Essa conta não existe
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                            onclick="modal.close()"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          Não foi possível fazer login pois esse e-mail ainda
+                          não está cadastrado. Faça seu cadastro!
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                            onclick="modal.close()"
+                          >
+                            Fechar
+                          </button>
+                          <a href="../pages/cadastro.html">
+                            <button type="button" class="btn modal-login">
+                              Fazer cadastro
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div
+            class="
+              col-12
+              d-none d-lg-flex
+              justify-content-center
+              col-lg-8
+              height
+            "
+          >
+            <img class="" src="../assets/images/main-movies.png" alt="" />
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="../js/Modal.js"></script>
+    <script src="../js/DataStorage.js"></script>
+    <script src="../js/ValidateForm.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
