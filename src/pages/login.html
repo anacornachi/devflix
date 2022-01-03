@@ -70,7 +70,7 @@
                   fw-bold
                   text-white
                 "
-                href="#"
+                href="../pages/cadastro.html"
                 >Cadastrar-se</a
               >
               <a
@@ -82,7 +82,7 @@
                   fw-bold
                   text-white
                 "
-                href="#"
+                href="../pages/login.html"
                 >Entrar</a
               >
             </div>
@@ -104,8 +104,8 @@
                 p-0
                 align-items-center
               "
+              data-sign-in
               action=""
-              data-main-content
             >
               <div class="row col-12 col-md-6 gap-3 gap-md-4 p-0 w-100">
                 <div class="col-12 p-0">
@@ -118,9 +118,8 @@
                     id="validation__email"
                     required
                     placeholder="seuemail@mail.com"
-                    data-mail
+                    data-email
                     name="email"
-                    autofocus
                   />
                   <div class="invalid-feedback">
                     Por favor, insira seu e-mail!
@@ -142,12 +141,12 @@
                     name="password"
                   />
                   <div class="invalid-feedback">
-                    Por favor, insira sua senha!
+                    Por favor, insira sua senha! (mínimo de 8 caracteres)
                   </div>
                 </div>
                 <p class="text-white secondary-text">
                   <a
-                    href="#"
+                    href="../pages/recuperacao-de-senha.html"
                     class="ms-1 text-white border-bottom border-warning"
                   >
                     Esqueci minha senha</a
@@ -166,7 +165,7 @@
                 >
                   Ainda não possui conta?
                   <a
-                    href="#"
+                    href="../pages/cadastro.html"
                     class="ms-1 text-white border-bottom border-warning"
                   >
                     Cadastre-se por aqui!</a
@@ -189,11 +188,54 @@
                       align-self-center
                       justify-self-center
                     "
-                    name="recovery-button"
-                    data-recovery-button
+                    name="submit-button"
                   >
                     Entrar
                   </button>
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                    data-modal
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Essa conta não existe
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                            onclick="modal.close()"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          Não foi possível fazer login pois esse e-mail ainda
+                          não está cadastrado. Faça seu cadastro!
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                            onclick="modal.close()"
+                          >
+                            Fechar
+                          </button>
+                          <a href="../pages/cadastro.html">
+                            <button type="button" class="btn modal-login">
+                              Fazer cadastro
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </form>
@@ -212,6 +254,10 @@
         </section>
       </div>
     </main>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/DataStorage.js"></script>
+    <script src="../js/ValidateForm.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

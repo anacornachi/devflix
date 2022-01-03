@@ -151,6 +151,26 @@ input::selection {
   white-space: wrap;
 }
 
+.modal-content {
+  /* background-color: var(--main-blue); */
+  background-color: white;
+  color: var(--main-blue);
+  border: 3px solid orange;
+}
+
+.modal-login {
+  background-color: var(--orange);
+  color: white;
+}
+
+.modal-login:hover {
+  color: white;
+}
+
+.btn-close {
+  background-color: white;
+}
+
 @media (min-width: 576px) {
   .secondary-text {
     font-size: 15px;

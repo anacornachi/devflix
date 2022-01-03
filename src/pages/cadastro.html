@@ -70,7 +70,7 @@
                   fw-bold
                   text-white
                 "
-                href="#"
+                href="../pages/cadastro.html"
                 >Cadastrar-se</a
               >
               <a
@@ -82,7 +82,7 @@
                   fw-bold
                   text-white
                 "
-                href="#"
+                href="../pages/login.html"
                 >Entrar</a
               >
             </div>
@@ -103,6 +103,7 @@
             align-items-center align-items-md-start
             justify-content-md-center
           "
+          data-sign-up
           novalidate
         >
           <div class="row col-12 col-md-6 col-lg-4 gap-3 p-0">
@@ -313,7 +314,10 @@
               "
             >
               Já possui conta?
-              <a href="#" class="ms-1 text-white border-bottom border-warning">
+              <a
+                href="../pages/login.html"
+                class="ms-1 text-white border-bottom border-warning"
+              >
                 Entre por aqui!</a
               >
             </p>
@@ -323,11 +327,54 @@
               <button
                 class="btn action-button border-15"
                 type="submit"
-                data-submit-button
                 name="submit-button"
               >
                 Cadastrar
               </button>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+                data-modal
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Cadastro já existente!
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                        onclick="modal.close()"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      Não foi possível criar sua conta pois esse e-mail já está
+                      cadastrado. Faça login
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                        onclick="modal.close()"
+                      >
+                        Fechar
+                      </button>
+                      <a href="../pages/login.html">
+                        <button type="button" class="btn modal-login">
+                          Fazer login
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div
@@ -353,6 +400,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/main.js"></script>
     <script src="../js/DataStorage.js"></script>
     <script src="../js/ValidateForm.js"></script>
   </body>

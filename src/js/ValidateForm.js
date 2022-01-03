@@ -9,6 +9,7 @@ class ValidateForm {
     this.storage = new DataStorage();
     this.name = document.querySelector("[data-name]");
     this.email = document.querySelector("[data-email]");
+    this.lastCepChecked = "";
 
     this.patterns = {
       email:
@@ -44,12 +45,20 @@ class ValidateForm {
           this.isValid(error);
         });
       } else {
-        this.mainData = {
-          name: document.querySelector("[data-name]").value,
-          email: document.querySelector("[data-email]").value,
-          password: document.querySelector("[data-password]").value,
-        };
-        this.storage.addNewUser(this.mainData);
+        if (this.form.dataset.hasOwnProperty("signUp")) {
+          this.mainData = {
+            name: document.querySelector("[data-name]").value,
+            email: document.querySelector("[data-email]").value,
+            password: document.querySelector("[data-password]").value,
+          };
+          this.storage.addNewUser(this.mainData);
+        } else {
+          this.mainData = {
+            email: document.querySelector("[data-email]").value,
+            password: document.querySelector("[data-password]").value,
+          };
+          this.storage.login(this.mainData);
+        }
       }
     });
   }
@@ -79,65 +88,61 @@ class ValidateForm {
         if (value.length >= 3) {
           return true;
         }
-        return;
       case "email":
         if (this.patterns[name] && this.patterns[name].test(value) == true) {
           return true;
         }
-        return;
       case "rg":
         if (this.patterns[name] && this.patterns[name].test(value) == true) {
           return true;
         }
-        return;
       case "password":
         if (value.length >= 8) {
           return true;
         }
-        return;
       case "confirm-password":
         if (value.length >= 8 && value == this.password) {
           return true;
         }
-        return;
       case "cep":
         if (this.patterns[name] && this.patterns[name].test(value) == true) {
-          this.queryCep(value);
-          return true;
+          console.log(this.lastCepChecked);
+          if (value !== this.lastCepChecked) {
+            this.lastCepChecked = value;
+            this.queryCep(value);
+            return true;
+          }
+          return;
         }
-        return;
       case "number":
         if (value > 0) {
           return true;
         }
-        return;
       default:
         return false;
     }
   }
 
   queryCep(code) {
-    setTimeout(() => {
-      fetch(`https://viacep.com.br/ws/${code}/json/`)
-        .then((response) => response.json())
-        .then((data) => {
-          if (data.erro == true) {
-            throw new Error();
-          } else {
-            this.address.value = data.logradouro;
-            this.state.value = data.uf;
-            this.city.value = data.localidade;
-            this.neighborhood.value = data.bairro;
-          }
-        })
-        .catch((error) => {
-          this.cep = document.querySelector("[data-cep]");
-          this.errorMessage = document.querySelector("[data-invalid-cep]");
-          this.cep.style.borderColor = "#ff0000";
-          this.cep.classList.add("is-invalid");
-          this.errorMessage.innerText = "CEP inválido. Tente novamente";
-        });
-    }, 1000);
+    fetch(`https://viacep.com.br/ws/${code}/json/`)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.erro == true) {
+          throw new Error();
+        } else {
+          this.address.value = data.logradouro;
+          this.state.value = data.uf;
+          this.city.value = data.localidade;
+          this.neighborhood.value = data.bairro;
+        }
+      })
+      .catch((error) => {
+        this.cep = document.querySelector("[data-cep]");
+        this.errorMessage = document.querySelector("[data-invalid-cep]");
+        this.cep.style.borderColor = "#ff0000";
+        this.cep.classList.add("is-invalid");
+        this.errorMessage.innerText = "CEP inválido. Tente novamente";
+      });
   }
 }
 const validate = new ValidateForm();
