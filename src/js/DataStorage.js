@@ -24,7 +24,7 @@ class DataStorage {
     } else {
       this.users.push(newUser);
       this.save();
-      return (window.location.href = "/src/pages/login.html");
+      return (window.location.href = "/src/pages/home-page.html");
     }
   }
 
@@ -37,12 +37,17 @@ class DataStorage {
       if (isValid) {
         return (window.location.href = "/src/pages/home-page.html");
       }
-      //tratar a senha errada
+      const errorMessage = document.querySelector(".password-error");
+      return (errorMessage.innerText = "Senha inválida. Tente novamente");
     }
     this.modal.open();
   }
 
   save() {
     localStorage.setItem("users", JSON.stringify(this.users));
+  }
+
+  recovery(input) {
+    console.log(input);
   }
 }

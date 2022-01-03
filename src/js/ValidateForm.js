@@ -52,12 +52,14 @@ class ValidateForm {
             password: document.querySelector("[data-password]").value,
           };
           this.storage.addNewUser(this.mainData);
-        } else {
+        } else if (this.form.dataset.hasOwnProperty("signIn")) {
           this.mainData = {
             email: document.querySelector("[data-email]").value,
             password: document.querySelector("[data-password]").value,
           };
           this.storage.login(this.mainData);
+        } else {
+          this.storage.recovery(input);
         }
       }
     });
