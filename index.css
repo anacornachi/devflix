@@ -1,0 +1,142 @@
+@import url(https://fonts.google.com/specimen/Rubik#standard-styles);
+body { 
+    
+    background: #091C3E; 
+       
+     
+}
+.poster-filme{
+    
+    
+    margin: top 30px;
+}
+.filho-titulo{
+    display: flex;
+    width: 660px;
+    height: 64px;
+    left: 660px;
+    top: 212px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+}
+.ano-titulo {
+    
+    width: 63px;
+    height: 24px;
+    left: 660px;
+    top: 285px;
+    
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+.tempo-titulo {
+    
+    width: 86px;
+    height: 24px;
+    left: 742px;
+    top: 285px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+.nota-titulo {
+    
+    width: 77px;
+    height: 30px;
+    left: 660px;
+    top: 325px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+.plot-titulo {
+    
+    width: 660px;
+    height: 168px;
+    left: 660px;
+    top: 397px;
+    
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+.elenco-titulo {
+    
+    width: 82px;
+    height: 24px;
+    left: 660px;
+    top: 661px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+.elencoNome {
+    
+    width: 246px;
+    height: 24px;
+    left: 679px;
+    top: 714px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+.direcao-titulo {
+    
+    width: 82px;
+    height: 24px;
+    left: 660px;
+    top: 778px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.direcaoNome {
+  
+    width: 246px;
+    height: 24px;
+    left: 679px;
+    top: 831px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+.btn-assistir {
+    
+    width: 203px;
+    height: 49.74px;
+    left: 1117px;
+    top: 861px;
+    background: linear-gradient(273.04deg, #E49D47 -9.84%, #EEB065 112.86%);
+    box-shadow: 0px 2px 10px 6px rgba(91, 91, 91, 0.25);
+    border-radius: 15px;
+    font-family: Rubik;
+}
