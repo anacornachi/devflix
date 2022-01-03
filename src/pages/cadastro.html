@@ -91,7 +91,7 @@
       </nav>
     </header>
     <main class="p-3 p-md-4 min-vh-100">
-      <div class="container main-background h-100 py-3 p-md-5 border-15">
+      <div class="container main-container h-100 py-3 p-md-5 border-15">
         <h2 class="row fs-1 px-2 fw-bold text-white mb-3">Cadastre-se</h2>
         <form
           class="
@@ -119,7 +119,6 @@
                 placeholder="Seu nome"
                 data-name
                 name="name"
-                autofocus
               />
               <div class="invalid-feedback">Por favor, insira seu nome!</div>
             </div>
@@ -208,7 +207,9 @@
                 data-cep
                 name="cep"
               />
-              <div class="invalid-feedback">Insira um CEP!</div>
+              <div class="invalid-feedback" data-invalid-cep>
+                Insira um CEP!
+              </div>
             </div>
             <div class="col-12">
               <label for="validation__address" class="form-label text-white"
@@ -218,10 +219,10 @@
                 type="text"
                 class="form-control input border-15 overflow-x-scroll"
                 id="validation__address"
-                required
                 disabled
                 placeholder="Rua JavaScript Orientado a Objetos"
                 name="address"
+                data-address
               />
             </div>
             <div class="col-12 d-flex">
@@ -246,7 +247,7 @@
                   for="validation__complement"
                   class="form-label text-white"
                   >Complemento:
-                  <span class="text-secondary secondary-option"
+                  <span class="text-secondary secondary-text"
                     >(opcional)</span
                   ></label
                 >
@@ -268,9 +269,8 @@
                   type="text"
                   class="form-control input border-15 overflow-x-scroll"
                   id="validation__state"
-                  required
-                  disabled
                   name="state"
+                  data-state
                 />
               </div>
               <div class="col-8">
@@ -281,9 +281,9 @@
                   type="text"
                   class="form-control input border-15 overflow-x-scroll"
                   id="validation__city"
-                  required
                   name="city"
                   disabled
+                  data-city
                 />
               </div>
             </div>
@@ -297,15 +297,15 @@
                 type="text"
                 class="form-control input border-15 overflow-x-scroll"
                 id="validation__neighborhood"
-                required
                 name="neighborhood"
                 disabled
+                data-neighborhood
               />
             </div>
             <p
               class="
                 text-white
-                secondary-option
+                secondary-text
                 mt-2
                 d-flex
                 justify-content-center
@@ -321,7 +321,7 @@
               class="col-12 d-flex justify-content-center align-items-center"
             >
               <button
-                class="btn submit-button border-15"
+                class="btn action-button border-15"
                 type="submit"
                 data-submit-button
                 name="submit-button"
@@ -353,6 +353,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/Form.js"></script>
+    <script src="../js/DataStorage.js"></script>
+    <script src="../js/ValidateForm.js"></script>
   </body>
 </html>

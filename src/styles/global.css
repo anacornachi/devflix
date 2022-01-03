@@ -79,6 +79,7 @@ a {
   border-color: white;
   color: white;
   font-size: 12px;
+}
 
 .border-15 {
   border-radius: 15px;
@@ -91,10 +92,6 @@ a {
 
 .secondary-text {
   font-size: 12px;
-}
-
-main {
-  background-color: var(--main-blue);
 }
 
 .input {
@@ -112,16 +109,16 @@ main {
   outline: none;
 }
 
+.form-control:disabled {
+  background-color: var(--main-blue);
+}
+
 input::placeholder {
   color: gray;
 }
 
 input::selection {
   background-color: var(--orange);
-}
-
-.form-control:disabled {
-  background-color: var(--main-blue);
 }
 
 .shadow-light {
@@ -134,12 +131,8 @@ input::selection {
 
 .action-button {
   background-color: var(--main-blue);
-  border-color: white;
-
-.submit-button {
-  background-color: var(--main-blue);
-  border-color: var(--orange);
   color: white;
+  border-color: white;
   font-size: 15px;
   padding: 15px 30px;
   transition: 0.3s;
@@ -154,7 +147,7 @@ input::selection {
   height: 50%;
 }
 
- .main__title {
+.main__title {
   white-space: wrap;
 }
 
@@ -163,52 +156,51 @@ input::selection {
     font-size: 15px;
   }
 
-@media (min-width: 768px) {
-  .input {
-    font-size: 15px;
+  @media (min-width: 768px) {
+    .input {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .input {
+      font-size: 15px;
+    }
+    .action-button {
+      font-size: 20px;
+      padding: 15px 50px;
+    }
+    .recovery__title {
+      white-space: nowrap;
+    }
+    .height {
+      height: 100%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .recovery__image {
+      transform: scale(0.7);
+    }
+    .gap-40 {
+      gap: 120px;
+    }
+    .main__title {
+      white-space: nowrap;
+    }
+    .secondary-option {
+      font-size: 15px;
+    }
+    .submit-button {
+      font-size: 20px;
+      padding: 15px 50px;
+    }
+    .gap-40 {
+      gap: 120px;
+    }
+    .submit-button:hover {
+      color: white;
+      filter: brightness(1.5);
+    }
   }
 }
-
-@media (min-width: 992px) {
-  .input {
-    font-size: 15px;
-  }
-  .action-button {
-    font-size: 20px;
-    padding: 15px 50px;
-  }
-  .recovery__title {
-    white-space: nowrap;
-  }
-  .height {
-    height: 100%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .recovery__image {
-    transform: scale(0.7);
-  }
-  .gap-40 {
-    gap: 120px;
-  }
-  .main__title {
-    white-space: nowrap;
-  }
-   .secondary-option {
-    font-size: 15px;
-  }
-  .submit-button {
-    font-size: 20px;
-    padding: 15px 50px;
-  }
-  .gap-40 {
-    gap: 120px;
-  }
-  .submit-button:hover {
-    color: white;
-    filter: brightness(1.5);
-  }
-}
-
-
