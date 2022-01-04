@@ -2,7 +2,6 @@ class DataStorage {
   constructor() {
     this.users;
     this.fields = document.querySelectorAll("input");
-    this.modal = document.querySelector("[data-modal]");
     this.modal = new Modal();
     this.getStorage();
   }
@@ -45,9 +44,5 @@ class DataStorage {
 
   save() {
     localStorage.setItem("users", JSON.stringify(this.users));
-  }
-
-  recovery(input) {
-    console.log(input);
   }
 }

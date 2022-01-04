@@ -171,6 +171,12 @@ input::selection {
   background-color: white;
 }
 
+footer {
+  background-color: var(--darker-blue);
+  height: 8%;
+  color: var(--orange);
+}
+
 @media (min-width: 576px) {
   .secondary-text {
     font-size: 15px;
