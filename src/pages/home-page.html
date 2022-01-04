@@ -1,10 +1,903 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DevFlix - Assita filmes e séries online</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/style_home.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container d-flex justify-content-between">
+          <a class="navbar-brand" href="#"
+            ><h1 class="logo fw-bold fs-4">Devflix</h1></a
+          >
+          <button
+            class="navbar-toggler border-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="material-icons text-white d-flex align-items-center">
+              menu
+            </span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav gap-lg-5">
+              <a
+                class="nav-link active d-flex justify-content-center align-items-center fw-bold text-white"
+                href="../pages/busca.html"
+              >
+                <i class="bi bi-search icon"></i>
+                <p class="ms-3 my-0 d-lg-none">Buscar</p></a
+              >
+              <a
+                class="nav-link active d-flex justify-content-center align-items-center fw-bold text-white"
+                href="../pages/contato.html"
+                ><i class="bi bi-person-circle icon"></i>
+                <p class="ms-3 d-lg-none my-0">Contato</p></a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div
+        class="container main-box py-3 py-5 border-15 d-flex flex-column gap-5"
+      >
+        <section class="row px-3">
+          <h2 class="col-12 fw-bold text-white mb-5 p-0">Seja bem vindo!</h2>
+          <div class="container border-15" id="soul">
+            <div class="row">
+              <div class="col-12 col-lg-4 d-flex justify-content-center">
+                <img
+                  src="../assets/images/soul2.png"
+                  class="img-fluid float-end"
+                  id="img-soul"
+                />
+              </div>
+              <div
+                class="col-12 col-lg-8 d-flex flex-column align-items-center justify-content-center justify-content-md-around align-items-lg-end px-lg-5"
+              >
+                <h1 class="fw-bold text-white text-center text-lg-end p-4">
+                  Uma novidade chamada, Soul.
+                </h1>
+                <div>
+                  <a
+                    href="#"
+                    role="button"
+                    class="btn btn-primary btn-lg my-3"
+                    id="botao-soul"
+                    >Assistir agora</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="row px-3 d-flex align-items-center justify-content-center"
+        >
+          <h2 class="fw-bold text-white mb-5">Categorias</h2>
+          <div
+            class="row d-flex justify-content-center m-0 gap-md-4 gap-xxl-5 p-0"
+          >
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/toy-story.jpg"
+                  class="rounded-3"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  Animação
+                </h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/john-wick.jpg"
+                  class="rounded-3"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">Ação</h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/parasita.jpg"
+                  class="rounded-3"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">Drama</h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/got.jpg"
+                  class="rounded-3"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">Séries</h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/it-acoisa.jpg"
+                  class="rounded-3"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">Terror</h5>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <section
+          class="row px-3 d-flex align-items-center justify-content-center gap-md-5"
+        >
+          <h2 class="fw-bold text-white mb-5 mb-md-0">Animação</h2>
+          <div
+            class="container container d-none d-md-flex flex-column gap-md-4 gap-lg-5"
+          >
+            <div class="row">
+              <img
+                src="../assets/images/raya-dragao.jpg"
+                class="img-fluid border-15 p-0 poster"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            id="carousel-animation-movie"
+            class="carousel slide d-md-none"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../img/madagascar.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/sooul.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/toy.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/zootopia.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/divertidamente.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel-animation-movie"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel-animation-movie"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div
+            class="row d-none d-md-flex justify-content-center m-0 gap-md-4 gap-xxl-5 p-0"
+          >
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="border-0">
+                <img
+                  src="../assets/images/madagascar.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  Madagascar
+                </h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/sooul.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">Soul</h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/toy.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  Toy Story
+                </h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/zootopia.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  Zootopia
+                </h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/divertidamente.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  Divertidamente
+                </h5>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <section
+          class="row px-3 d-flex align-items-center justify-content-center gap-md-5"
+        >
+          <h2 class="fw-bold text-white mb-5 mb-md-0">Ação</h2>
+          <div
+            class="container container d-none d-md-flex flex-column gap-md-4 gap-lg-5"
+          >
+            <div class="row">
+              <img
+                src="../assets/images/Venom_2.jpeg"
+                class="img-fluid border-15 p-0 poster"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            id="carousel-action-movie"
+            class="carousel slide d-md-none"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../img/transformers.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/wick.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/furiosos.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/inglorios.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/matrix.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel-action-movie"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel-action-movie"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div
+            class="row d-none d-md-flex justify-content-center m-0 gap-md-4 gap-xxl-5 p-0"
+          >
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="border-0">
+                <img
+                  src="../assets/images/transformers.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  Transformers
+                </h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/wick.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  John Wick
+                </h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/furiosos.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  Velozes e Furiosos
+                </h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/inglorios.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  Bastardos Inglórios
+                </h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/matrix.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">Matrix</h5>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <section
+          class="row px-3 d-flex align-items-center justify-content-center gap-md-5"
+        >
+          <h2 class="fw-bold text-white mb-5 mb-md-0">Drama</h2>
+          <div
+            class="container container d-none d-md-flex flex-column gap-md-4 gap-lg-5"
+          >
+            <div class="row">
+              <img
+                src="../assets/images/o_menino.jpeg"
+                class="img-fluid border-15 p-0 poster"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            id="carousel-drama-movie"
+            class="carousel slide d-md-none"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../img/horas.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/noma.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/parasite.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/nome.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/day.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel-drama-movie"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel-drama-movie"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div
+            class="row d-none d-md-flex justify-content-center m-0 gap-md-4 gap-xxl-5 p-0"
+          >
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="border-0">
+                <img
+                  src="../assets/images/horas.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">Horas</h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/noma.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  Nomadland
+                </h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/parasite.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  Parasita
+                </h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/nome.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  Me chame pelo seu nome
+                </h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/day.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">Um dia</h5>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <section
+          class="row px-3 d-flex align-items-center justify-content-center gap-md-5"
+        >
+          <h2 class="fw-bold text-white mb-5 mb-md-0">Séries</h2>
+          <div
+            class="container container d-none d-md-flex flex-column gap-md-4 gap-lg-5"
+          >
+            <div class="row">
+              <img
+                src="../assets/images/dopesick.jpeg"
+                class="img-fluid border-15 p-0 poster"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            id="carousel-series"
+            class="carousel slide d-md-none"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../img/revenge.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/raio.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/game.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/sabrina.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/them.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel-series"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel-series"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div
+            class="row d-none d-md-flex justify-content-center m-0 gap-md-4 gap-xxl-5 p-0"
+          >
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="border-0">
+                <img
+                  src="../assets/images/revenge.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">Revenge</h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/raio.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  Raio Negro
+                </h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/game.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  Game of Thrones
+                </h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/sabrina.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">Sabrina</h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/them.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">Them</h5>
+              </figure>
+            </div>
+          </div>
+        </section>
+        <section
+          class="row px-3 d-flex align-items-center justify-content-center gap-md-5"
+        >
+          <h2 class="fw-bold text-white mb-5 mb-md-0">Terror</h2>
+          <div
+            class="container container d-none d-md-flex flex-column gap-md-4 gap-lg-5"
+          >
+            <div class="row">
+              <img
+                src="../assets/images/panico_floresta.jpeg"
+                class="img-fluid border-15 p-0 poster"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            id="carousel-horror-movie"
+            class="carousel slide d-md-none"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../img/jigsaw.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/it.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/invocacao.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/chamado.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../img/halloween.jpg"
+                  class="d-block w-100 border-15"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel-horror-movie"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel-horror-movie"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div
+            class="row d-none d-md-flex justify-content-center m-0 gap-md-4 gap-xxl-5 p-0"
+          >
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="border-0">
+                <img
+                  src="../assets/images/jigsaw.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  Jogos Mortais
+                </h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/it.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  It - A coisa
+                </h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/invocacao.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  Invocação do mal
+                </h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/chamado.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  O chamado
+                </h5>
+              </figure>
+            </div>
+            <div class="col-6 col-md-2 d-flex flex-column p-md-0">
+              <figure class="card border-0">
+                <img
+                  src="../assets/images/halloween.jpg"
+                  class="rounded-3 movie-poster w-100"
+                  alt="..."
+                />
+                <h5 class="text-center fw-bold text-white m-0 mt-3">
+                  Halloween
+                </h5>
+              </figure>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="d-flex align-items-center justify-content-center">
+      <p class="m-0">&copy Desenvolvido com 💛 pelo Grupo 1 - T10</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/DataStorage.js"></script>
+  </body>
 </html>

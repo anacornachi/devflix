@@ -1,90 +1,52 @@
- #soul {
-      background-color: var(--darker-blue);
-      border-radius: 15px;
-      padding-left: 60px;
-      padding-right: 50px;
-      background-image: linear-gradient(to right,black,var(--darker-blue) 10%,black,var(--darker-blue));
-  }
-
-  #botao-soul {
-      background-color: var(--orange);
-      border-color: var(--orange);
-      border-radius: 12px;
-      color: white;
-      font-size: 20px;
-      font-weight: bold;
-      padding: 15px 30px;
-  }
-
-  .card {
-    object-fit: contain;
-    background: var(--main-blue);
-    margin-bottom: 15px;
-  }
-
-  .form-control {
-    height: 30px;
-    font-size: 12px;
-    padding-left: 50px;
-    width: 0;
-    position: absolute;
-    left: auto;
-    top: 15px; 
-    border: none;
-    background: none;
-    outline: none;
-    transition: width 1s ease-out;
-    cursor: pointer;
-  }
-
-  .form-control:focus { 
-    border-radius: 20px;
-    width: 230px;
-    transition: width 1s ease-in;
-    background-color: var(--main-blue);
-    color: white;
-  } 
-
-  input::placeholder {
-    color: gray;
-  }
-
-.poster img {
-    border-radius: 15px;
-    height: 300px;
-    object-fit: cover;
-    object-position: bottom;
-    margin-bottom: 30px;
+#soul {
+  background-image: linear-gradient(
+    to right,
+    black,
+    var(--darker-blue) 10%,
+    black,
+    var(--darker-blue)
+  );
 }
 
-.carousel {
-  display: none;
+#botao-soul {
+  background-color: var(--orange);
+  border-color: var(--orange);
+  border-radius: 12px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 30px;
 }
 
-footer {
-  background-color: var(--darker-blue);
-  padding: 30px;
+.card {
+  background: var(--main-blue);
 }
 
-#rodape {
-  color: var(--orange);
-  text-align: center;
+.main-box {
+  min-height: fit-content;
 }
 
-@media (max-width: 790px) {
-  .carousel {
-      display: block;
-      text-align: center;
-  }
-  .filmes {
-      display: none;
-  }
-  .poster {
-    display: none;
-  }
-  .form-control {
-    top: 45px;
-  }
+.poster {
+  max-height: 400px;
+  object-fit: cover;
 }
 
+.movie-poster {
+  min-height: 150px;
+  max-height: 350px;
+}
 
+.carousel-item {
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel-item img {
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  .icon {
+    transform: scale(1.2);
+  }
+}
