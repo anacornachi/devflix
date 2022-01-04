@@ -1,0 +1,61 @@
+.form-control {
+  height: 30px;
+  font-size: 12px;
+  padding-left: 50px;
+  width: 0;
+  position: absolute;
+  left: auto;
+  top: 15px; 
+  border: none;
+  background: none;
+  outline: none;
+  transition: width 1s ease-out;
+  cursor: pointer;
+}
+
+.form-control:focus { 
+  border-radius: 20px;
+  width: 230px;
+  transition: width 1s ease-in;
+  background-color: var(--main-blue);
+  color: white;
+} 
+
+input::placeholder {
+  color: gray;
+}
+
+.stars {
+  color: yellow;
+}
+
+.submit-button {
+  background-color: var(--orange);
+  border-color: var(--orange);
+  color: white;
+  font-size: 15px;
+  padding: 15px 30px;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  color: white;
+  filter: brightness(1.5);
+}
+
+footer {
+  background-color: var(--darker-blue);
+  padding: 30px;
+}
+
+#rodape {
+  color: var(--orange);
+  text-align: center;
+}
+  
+@media (min-width: 992px) {
+  .submit-button {
+    font-size: 20px;
+    padding: 15px 50px;
+  }
+}
