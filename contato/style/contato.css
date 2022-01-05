@@ -1,0 +1,83 @@
+:root {
+    --darker-blue: #011126;
+    --main-blue: #011c40;
+    --lighter-blue: #2f66a1;
+    --orange: #f29a2e;
+  }
+
+header {
+    background-color: var(--darker-blue);
+  }
+
+.logo {
+    color: var(--orange);
+    font-size: 28px;
+    margin: 0;
+  }
+
+body {
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: var(--darker-blue);
+    border-radius: 15px;
+  }
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--orange);
+    border-radius: 15px;
+  }
+
+  main {
+    background-color: var(--main-blue);
+  }
+  
+  .main-background {
+    background-color: var(--darker-blue);
+  }
+  
+  .secondary-option {
+    font-size: 12px;
+  }
+
+  .border-15 {
+  border-radius: 15px;
+}
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .nav-link {
+    border: none;
+    transition: 0.5s;
+  }
+  
+  .nav-link:hover {
+    border-bottom: 1px solid var(--orange);
+  }
+
+  .card {
+    object-fit: contain;
+    background: var(--darker-blue);
+  }
+  
+  i {
+      color: var(--orange);
+  }
+
+footer {
+    background-color: var(--darker-blue);
+    padding: 30px;
+  }
+  
+  #rodape {
+    color: var(--orange);
+    text-align: center;
+  }
