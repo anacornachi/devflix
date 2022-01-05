@@ -23,7 +23,7 @@ class DataStorage {
     } else {
       this.users.push(newUser);
       this.save();
-      return (window.location.href = "/src/pages/home-page.html");
+      return (window.location.href = "../pages/home-page.html");
     }
   }
 
@@ -34,7 +34,7 @@ class DataStorage {
       );
       const isValid = storedData[0].password === userData.password;
       if (isValid) {
-        return (window.location.href = "/src/pages/home-page.html");
+        return (window.location.href = "../pages/home-page.html");
       }
       const errorMessage = document.querySelector(".password-error");
       return (errorMessage.innerText = "Senha inválida. Tente novamente");
