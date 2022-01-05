@@ -1,11 +1,15 @@
 .body {
   height: 100vh;
 }
-.main-background {
+main {
   background-image: url("../assets/images/mosaico2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 87%;
+}
+
+.background {
+  background-color: #011126;
 }
 
 .search-form {
@@ -16,6 +20,21 @@
 
 .search-form input {
   width: 100%;
+}
+
+.btn-default {
+  height: auto;
+  width: auto;
+}
+
+.btn-cta {
+  background-color: #f29a2e;
+  color: white;
+  border: none;
+}
+
+.movie-poster {
+  max-height: 600px;
 }
 
 @media (min-width: 768px) {
