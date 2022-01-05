@@ -1,61 +1,111 @@
-body {
-  box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
-  scroll-behavior: smooth;
-}
-
-:root {
-  --darker-blue: #011126;
-  --main-blue: #011c40;
-  --lighter-blue: #2f66a1;
-  --orange: #f29a2e;
-}
-
-header {
-  background-color: var(--darker-blue);
-}
-
-.logo {
-  /* font-family: "Rubik Mono One", sans-serif; */
-  color: var(--orange);
-  font-size: 28px;
-  margin: 0;
-}
-
-main {
-  background-color: var(--main-blue);
-}
-
-#box {
-  background: linear-gradient(214.16deg, #0b0e1a 71.71%, #0c1d39 86.36%);
-  box-shadow: 0px 2px 10px 6px rgba(91, 91, 91, 0.25);
+.banner {
+  max-height: 400px;
 }
 
 .relative {
   position: relative;
 }
 
-.absolute {
+.main-description {
   position: absolute;
-}
-
-#btn {
-  background: linear-gradient(
-    92.02deg,
-    #2f66a1 -3.86%,
-    rgba(47, 102, 161, 0) 124%
-  );
-}
-
-.main-background {
-  background-color: var(--darker-blue);
+  bottom: 0;
 }
 
 .img-main {
   border-radius: 15px 15px 0 15px;
-  width: auto;
-  height: 550px;
+  height: 100%;
+  width: 100%;
 }
+
+.font-sm {
+  font-size: 12px;
+}
+
+.font-md {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+#box {
+  background: linear-gradient(214.16deg, #0b0e1a 71.71%, #0c1d39 86.36%);
+  box-shadow: 0px 2px 10px 6px rgba(91, 91, 91, 0.25);
+}
+
+#btn {
+  background: linear-gradient(92.02deg, #f29a2e -3.86%, #f29a2e 124%);
+  border: none;
+}
+
+.card {
+  background-color: #011126;
+  max-width: 400px;
+  max-height: 350px;
+  box-shadow: 0px 2px 10px 6px rgba(91, 91, 91, 0.25);
+}
+
+.card-img{
+  width: fit-content;
+  max-width: 100%;
+  max-height: 200px;
+}
+.card-description{
+  font-size: 12px;
+}
+
+.card-title{
+  font-size: 18px;
+}
+
+@media (min-width: 576px) {
+  .img-main {
+    width: auto;
+  }
+
+  .main-description {
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  .font-sm {
+    font-size: 17px;
+  }
+
+  .font-md {
+    font-size: 27px;
+    margin-bottom: 20px;
+  }
+  .card-description{
+    font-size: 15px;
+  }
+  
+  .card-title{
+    font-size: 21px;
+  }
+  
+}
+
+@media (min-width: 992px) {
+  .font-sm {
+    font-size: 20px;
+  }
+
+  .font-md {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .card{
+    width: 600px;
+    height: 400px;
+  }
+}
+/* 
+.main-background {
+  background-color: var(--darker-blue);
+}
+
+
 
 .main-fs {
   font-size: 30px;
@@ -75,11 +125,6 @@ main {
   font-size: 12px;
 }
 
-.style-card {
-  width: 200px;
-  height: 250px;
-  background: linear-gradient(214.16deg, #0b0e1a 71.71%, #0c1d39 86.36%);
-}
 
 .card-position-img {
   object-fit: cover;
@@ -93,43 +138,6 @@ main {
 
 .card-text {
   font-size: 10px;
-}
-
-footer {
-  background: var(--darker-blue);
-  color: var(--orange);
-  height: 65px;
-}
-
-.footer-fs {
-  font-size: 10px;
-}
-
-.border-15 {
-  border-radius: 15px;
-}
-
-.input {
-  background-color: var(--main-blue);
-  border-color: white;
-  color: white;
-  font-size: 12px;
-}
-
-.form-control:active,
-.form-control:focus {
-  background-color: var(--main-blue);
-  color: white;
-  box-shadow: none;
-  outline: none;
-}
-
-input::placeholder {
-  color: gray;
-}
-
-input::selection {
-  background-color: var(--orange);
 }
 
 @media (max-width: 320px) {
@@ -235,8 +243,3 @@ input::selection {
   }
 }
 
-@media (min-width: 1400px) {
-  .footer-fs {
-    font-size: 20px;
-  }
-}
