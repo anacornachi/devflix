@@ -1,0 +1,30 @@
+.body {
+  height: 100vh;
+}
+.main-background {
+  background-image: url("../assets/images/mosaico2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 87%;
+}
+
+.search-form {
+  background-color: #011126;
+  height: 100%;
+  width: 100%;
+}
+
+.search-form input {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .search-form {
+    height: 75%;
+    width: 75%;
+  }
+
+  .search-form input {
+    width: 50%;
+  }
+}

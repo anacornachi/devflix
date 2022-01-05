@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devflix - Busque seus filmes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/busca.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container d-flex justify-content-between">
+          <a class="navbar-brand" href="#"
+            ><h1 class="logo fw-bold fs-4">Devflix</h1></a
+          >
+          <button
+            class="navbar-toggler border-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="material-icons text-white d-flex align-items-center">
+              menu
+            </span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav gap-lg-5">
+              <a
+                class="nav-link active d-flex justify-content-center align-items-center fw-bold text-white"
+                href="../pages/home-page.html"
+              >
+                <i class="bi bi-house-door-fill"></i>
+                <p class="ms-3 my-0 d-lg-none">Home</p></a
+              >
+              <a
+                class="nav-link active d-flex justify-content-center align-items-center fw-bold text-white"
+                href="../pages/contato.html"
+                ><i class="bi bi-person-circle icon"></i>
+                <p class="ms-3 d-lg-none my-0">Contato</p></a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main-background p-3">
+      <div
+        class="container main-box py-5 border-15 d-flex flex-column gap-5 h-100 justify-content-center align-items-center"
+      >
+        <form
+          action=""
+          class="search-form d-flex flex-column align-items-center border-15 gap-5 py-4 px-3"
+        >
+          <label
+            for="search__title"
+            class="form-label text-white text-center fs-2"
+            >Busque aqui pelo título do filme (em inglês)
+          </label>
+          <input
+            required
+            placeholder="Godfather"
+            data-movie-title
+            minlength="1"
+            name="title"
+            id="search__title"
+            type="text"
+            class="form-control input border-15"
+          />
+          <button
+            class="btn action-button border-15"
+            type="submit"
+            name="submit-button"
+            data-search-button
+          >
+            Buscar
+          </button>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+            data-modal
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Título não encontrado
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                    onclick="modal.close()"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Não foi possível encontrar esse título. Verifique se o nome
+                  está escrito em inglês. Se sim, tente novamente mais tarde.
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                    onclick="modal.close()"
+                  >
+                    Fechar
+                  </button>
+                  <a href="../pages/home-page.html">
+                    <button type="button" class="btn modal-login">
+                      Voltar para home
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="d-flex align-items-center justify-content-center">
+      <p class="m-0">&copy Desenvolvido com 💛 pelo Grupo 1 - T10</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/Modal.js"></script>
+    <script src="../js/SearchMovie.js"></script>
+  </body>
+</html>
