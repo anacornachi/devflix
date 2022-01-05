@@ -1,0 +1,66 @@
+body {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --darker-blue: #011126;
+  --main-blue: #011c40;
+  --lighter-blue: #2f66a1;
+  --orange: #f29a2e;
+}
+
+header {
+  background-color: var(--darker-blue);
+}
+
+.logo {
+  /* font-family: "Rubik Mono One", sans-serif; */
+  color: var(--orange);
+  font-size: 28px;
+  margin: 0;
+}
+
+main {
+  background: url("../images/mosaico2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#box {
+  background: linear-gradient(214.16deg, #0b0e1a 71.71%, #0c1d39 86.36%);
+  box-shadow: 0px 2px 10px 6px rgba(91, 91, 91, 0.25);
+  width: 80% !important;
+}
+
+.title-fs {
+  font-size: 30px;
+}
+
+.input {
+  background-color: var(--main-blue);
+  border-color: white;
+  color: white;
+  font-size: 12px;
+}
+
+#btn {
+  width: 80px;
+}
+
+.border-15 {
+  border-radius: 15px;
+}
+
+footer {
+  background: var(--darker-blue);
+  color: var(--orange);
+  height: 65px;
+}
+
+@media (max-width: 320px) {
+  .title-fs {
+    font-size: 20px;
+  }
+}
