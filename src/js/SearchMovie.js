@@ -14,7 +14,7 @@ class SearchMovie {
   }
 
   searchMovie(movieName) {
-    fetch(`http://www.omdbapi.com/?t=${movieName}&apikey=10109cdf`)
+    fetch(`https://www.omdbapi.com/?t=${movieName}&apikey=10109cdf`)
       .then((response) => response.json())
       .then((data) => {
         if (data.Response == "False") {
